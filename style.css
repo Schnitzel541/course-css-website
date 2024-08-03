@@ -1,13 +1,23 @@
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     background-color: rgba(255, 230, 242, 0.158);
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.left-content > button {
+    background: none;
+    border: solid 2px rgb(255, 138, 138);
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    font-size: large;
+    transition: 0.1s;
 }
 
-button {
-    background-color: coral;
-    border: none;
-    cursor: pointer;
-    font-size: large;
+.left-content > button:hover {
+    background-color: rgb(255, 138, 138);;
 }
 
 .header {
@@ -57,6 +67,7 @@ button {
 }
 
 .container > .hero {
+    align-items: center;
     display: flex;
     flex-direction: row;
     background-color: rgb(255, 230, 242);
@@ -69,6 +80,14 @@ button {
 
 .hero > .left-content {
     margin: 100px;
+}
+
+.maintitle {
+    font-size: 48px;
+}
+
+.secondary-text {
+    font-size: 18px;
 }
 
 /* Info, info section */
@@ -122,10 +141,13 @@ button {
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 230, 242);
+
 }
 
-.quote > em {
-    font-size: large;
+.quote > p {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
     color: grey;
     margin: 30px;
     max-width: 400px;
@@ -156,8 +178,24 @@ button {
 
 .right-content > button {
     background: none;
-    border: solid white;
+    font-weight: bold;
+    border: solid 2px white;
     border-radius: 5px;
     padding: 10px 20px 10px 20px;
     color: white;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.right-content > button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Footer section */
+footer {
+    margin-top: auto;
+    background-color: rgb(255, 167, 211);
+    display: flex;
+    justify-content: center;
 }
