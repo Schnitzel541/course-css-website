@@ -73,11 +73,15 @@ button {
 /* Info, info section */
 
 .info {
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(250, 250, 250);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.info > div > h3 {
+    font-size: 24pt;
 }
 
 .infoblocks {
@@ -107,4 +111,21 @@ button {
 .blockinfo {
     width: 100px;
     hyphens: auto;
+    color: rgb(112, 112, 112);
+}
+
+/* Quote Section */
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 230, 242);
+}
+
+.quote > em {
+    font-size: large;
+    color: grey;
+    margin: 30px;
+    max-width: 400px;
 }
