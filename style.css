@@ -1,3 +1,47 @@
 body {
     margin: 0;
 }
+
+.body {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.header {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: rgb(255, 167, 211);
+    box-shadow: 0px 0px 10px 1px rgb(156, 156, 156);
+}
+
+.right-content,
+.left-content {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    hyphens: none;    
+}
+
+.right-content > img {
+    width: 50px;
+}
+
+.left-content > ul {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+}
+
+.left-content > ul > li {
+    color: white;
+    background-color: rgb(255, 123, 189);
+    padding: 10px;
+    cursor: pointer;
+    width: 90px;
+}
+
+.header > ul {
+    padding: 0;
+    margin: 0;
+}
