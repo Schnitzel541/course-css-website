@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: rgba(255, 230, 242, 0.158);
 }
 
 button {
@@ -128,4 +129,35 @@ button {
     color: grey;
     margin: 30px;
     max-width: 400px;
+}
+
+/* Call to action section */
+
+.calltoaction {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calltoaction > .modal {
+    background-color: rgb(44, 94, 255);
+    width: 800px;
+    height: 140px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    line-height: 7px;
+}
+
+.right-content > button {
+    background: none;
+    border: solid white;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    color: white;
 }
