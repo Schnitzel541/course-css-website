@@ -2,9 +2,11 @@ body {
     margin: 0;
 }
 
-.body {
-    margin-left: 20%;
-    margin-right: 20%;
+button {
+    background-color: coral;
+    border: none;
+    cursor: pointer;
+    font-size: large;
 }
 
 .header {
@@ -12,22 +14,22 @@ body {
     justify-content: space-between;
     display: flex;
     background-color: rgb(255, 167, 211);
-    box-shadow: 0px 0px 10px 1px rgb(156, 156, 156);
+
 }
 
-.right-content,
-.left-content {
+.header > .right-content,
+.header > .left-content {
     margin-left: 20%;
     margin-right: 20%;
     text-align: center;
     hyphens: none;    
 }
 
-.right-content > img {
+.header > .right-content > img {
     width: 50px;
 }
 
-.left-content > ul {
+.header > .left-content > ul {
     display: flex;
     list-style: none;
     gap: 80px;
@@ -44,4 +46,65 @@ body {
 .header > ul {
     padding: 0;
     margin: 0;
+}
+
+/* Hero, hero section */
+
+.container {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.container > .hero {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 230, 242);
+}
+
+.hero > .right-content > img {
+    max-width: 400px;
+    margin: 100px;
+}
+
+.hero > .left-content {
+    margin: 100px;
+}
+
+/* Info, info section */
+
+.info {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoblocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.ul-blocks {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Individual blocks here*/
+.block {
+    width: 100px;
+    height: 100px;
+    border: solid blue;
+    border-radius: 10px;
+}
+
+.blockinfo {
+    width: 100px;
+    hyphens: auto;
 }
